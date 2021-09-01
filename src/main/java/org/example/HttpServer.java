@@ -1,5 +1,7 @@
 package org.example;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.net.*;
 import java.io.*;
 import java.util.ArrayList;
@@ -57,7 +59,11 @@ public class HttpServer {
         clientSocket.close();
 
     }
-    public  String getResource(URI resorceURL) throws IOException {
+    public  String getResource(URI resorceURL,Socket ClientSocket) throws IOException {
+        // si es de tipo imagen llamar imagen
+        // getPng( OutputStream outClientSocket)
+        //si es de tipo js llamar lector archivos tanto js como html
+        // computDefaultResponse()
         return  computDefaultResponse();
     }
     public String  computDefaultResponse() throws IOException{
@@ -72,6 +78,26 @@ public class HttpServer {
         }
         System.out.println("Final Received: " + out);
         return out;
+    }
+    public void getPng( OutputStream outClientSocket){
+        String route = "src/main/resources/hello-world.png";
+        File file = new File(route);
+        if (file.exists()) {
+            try {
+                BufferedImage image = ImageIO.read(file);
+                ByteArrayOutputStream ArrBytes = new ByteArrayOutputStream();
+                DataOutputStream writeimg = new DataOutputStream(outClientSocket);
+                ImageIO.write(image, "PNG", ArrBytes);
+                writeimg.writeBytes("HTTP/1.1 200 OK \r\n"
+                                    + "Content-Type: image/png \r\n"
+                                    + "\r\n");
+                writeimg.write(ArrBytes.toByteArray());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }else {
+            System.out.println("ha ocurrido error al leer imagen"+file.getName());
+        }
     }
     public static void main(String[] args ) throws IOException, URISyntaxException {
         HttpServer.getInstance().start(args);
