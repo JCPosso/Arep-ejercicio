@@ -1,1 +1,1 @@
-alert("how are u?");
+alert("This is a javascript alert :)");

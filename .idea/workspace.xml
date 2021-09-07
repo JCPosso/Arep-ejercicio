@@ -15,10 +15,22 @@
       <change afterPath="$PROJECT_DIR$/../APRE-LAB2-pruebas/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../APRE-LAB2-pruebas/src/main/java/SqueareClient.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ARSW-Laboratorio-1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/html_public/hello-world.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ARSW-Laboratorio-4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ARSW-Laboratorio-4/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ARSW-Laboratorio-4/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ARSW-Laboratorio-4/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ARSW-Laboratorio-4/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ARSW-Laboratorio-4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ARSW-Laboratorio-4/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ARSW-Laboratorio-4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/html_public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/html_public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/html_public/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/html_public/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/html_public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/html_public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/HttpServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/HttpServer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
