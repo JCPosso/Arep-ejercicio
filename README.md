@@ -14,7 +14,7 @@ Antes de ejecutar el proyecto es necesario instalar los siguientes programas:
 ## Instalación
 Para descargar el proyecto primero debemos clonar el repositorio con ayuda de la consola de comandos:
 ```
-git clone https://github.com/JCPosso/Arep-ejercicio
+git clone https://github.com/JCPosso/Arep-ejercicio.git
 ```
 
 ## Pruebas y Compilación
@@ -25,8 +25,8 @@ Para descargar el proyecto primero debemos clonar el repositorio con ayuda de la
 git clone https://github.com/JCPosso/Arep-ejercicio
 ```
 
-## Ejecución
-Para ejecutar el proyecto usamos Maven en el directorio raiz del proyecto  usando el siguiente comando.
+## Compilacion
+Para compilar el proyecto usamos Maven en el directorio raiz del proyecto  usando el siguiente comando.
 ```
 mvn compile
 mvn package
@@ -36,9 +36,12 @@ Para ejecutar el proyecto usamos Maven en el directorio raiz del proyecto  usand
 ```
 mvn package
 ```
+Si desea ejecutar el programa desde línea de comandos puede usar las siguientes instrucciones:
+```
+java -cp target/classes;target/dependency/*  co.edu.escuelaing.arep.sparkr.SparkRWebServer  
+```
 #Despliegue HEROKU
 [![Heroku](src/main/resources/public/heroku.jpg)](https://heroku-app-arep.herokuapp.com/)
-
 ## Autor
 [Juan Camilo Posso Guevara](https://github.com/JCPosso)
 ## Derechos de Autor
