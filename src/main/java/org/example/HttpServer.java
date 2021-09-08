@@ -7,14 +7,9 @@ import java.util.HashMap;
 
 public class HttpServer {
     private static final HttpServer _instance = new HttpServer();
+    public HttpServer(){}
 
-    public static  HttpServer getInstance(){
-        return _instance;
-    }
-
-    private HttpServer(){}
-
-    public void start(String[] args) throws IOException, URISyntaxException {
+    public void start() throws IOException {
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(35000);
@@ -38,7 +33,7 @@ public class HttpServer {
         }
         serverSocket.close();
     }
-    public void serveConnection (Socket clientSocket) throws IOException, URISyntaxException {
+    public void serveConnection (Socket clientSocket) throws IOException {
         OutputStream out= clientSocket.getOutputStream();
         BufferedReader in = new BufferedReader( new InputStreamReader(clientSocket.getInputStream()));
         String inputLine, outputLine;
@@ -140,8 +135,5 @@ public class HttpServer {
         }else {
             System.out.println("ha ocurrido error al leer imagen"+file.getName());
         }
-    }
-    public static void main(String[] args ) throws IOException, URISyntaxException {
-        HttpServer.getInstance().start(args);
     }
 }
