@@ -1,6 +1,8 @@
 # AREP -TALLER CLIENTES Y SERVICIOS
 Este taller presenta diferentes retos que loa ayudaran a explorar los conceptos de esquemas de nombres y de clientes y servicios. Adicionalmente, el taller le ayudará a explorar la arquitectura de las aplicaciones distribuidas sobre internet.
-#CALENTAMIENTO (1H)
+
+# CALENTAMIENTO (1H)
+
 ## Reto 1
 - Escribir un servidor web que soporte múltiples solicitudes seguidas (no concurrentes). El servidor debe retornar todos los archivos solicitados, incluyendo páginas html e imágenes.
 - Construir un sitio web para probar el servidor.
@@ -73,7 +75,8 @@ A continuación se presentan las distintas respuestas generadas por el servidor
 
 ![Imagen](img/imagen.PNG)
 
-##Articulo prototipo y evaluación
+## Articulo prototipo y evaluación
+
 [Arep_laboratorio.pdf](Arep_Laboratorio.pdf)
 
 ## Autor
