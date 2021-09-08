@@ -38,8 +38,9 @@ mvn package
 ```
 Si desea ejecutar el programa desde línea de comandos puede usar las siguientes instrucciones:
 ```
-java -cp target/classes;target/dependency/*  co.edu.escuelaing.arep.sparkr.SparkRWebServer  
+java -cp target/classes;target/dependency/* org.example.HttpServer  
 ```
+
 #Despliegue HEROKU
 [![Heroku](src/main/resources/public/heroku.jpg)](https://heroku-app-arep.herokuapp.com/)
 ## Autor
