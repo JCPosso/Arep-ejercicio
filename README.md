@@ -36,13 +36,43 @@ Para ejecutar el proyecto usamos Maven en el directorio raiz del proyecto  usand
 ```
 mvn package
 ```
-Si desea ejecutar el programa desde línea de comandos puede usar las siguientes instrucciones:
+Si desea ejecutar el programa desde línea de comandos **(En Windows)** puede usar las siguientes instrucciones:
 ```
-java -cp target/classes;target/dependency/* org.example.HttpServer  
+java -cp target/classes;target/dependency/* org.example.HelloWorldServer
 ```
 
-#Despliegue HEROKU
-[![Heroku](src/main/resources/public/heroku.jpg)](https://heroku-app-arep.herokuapp.com/)
+##Despliegue en HEROKU de manera local
+Para el despliegue primero ejecutamos:
+```
+Heroku local web
+```
+Una vez iniciado el driver de conexión se ejecutará el servidor web desplegado en heroku para ello nuestra ruta de ejecución será:
+```
+http://localhost:5000.
+```
+
+### Hello World Server
+
+![principal](img/principal.PNG)
+
+A continuación se presentan las distintas respuestas generadas por el servidor
+
+- HTML
+
+![html](img/html.PNG)
+
+- CSS
+
+![css](img/css.PNG)
+
+- JS
+
+![javascript](img/javascript.PNG)
+
+- Imagenes
+
+![Imagen](img/imagen.PNG)
+
 ## Autor
 [Juan Camilo Posso Guevara](https://github.com/JCPosso)
 ## Derechos de Autor

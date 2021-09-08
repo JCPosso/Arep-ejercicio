@@ -98,7 +98,7 @@ public class HttpServer {
         String[] lista = path.split("\\.");
         String type = lista[lista.length-1];
         if( type.equals( "jpg" ) || type.equals( "png" ) ){
-            header += "HTTP/1.1 200 OK\r\n Content-Type: image/" + type +"\r\n" + "\r";
+            header += "HTTP/1.1 200 OK\r\n Content-Type: image/" + type +"\r\n";
         }else if (type.equals( "html" ) || type.equals( "js" ) || type.equals( "css" )){
             header += "HTTP/1.1 200 OK\r\n Content-Type: text/" + type +"\r\n" + "\r\n";
         }
