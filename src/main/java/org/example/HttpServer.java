@@ -5,10 +5,18 @@ import java.net.*;
 import java.io.*;
 import java.util.HashMap;
 
+/**
+ * @author Juan C Posso
+ * @version 1
+ * Servidor web
+ */
 public class HttpServer {
     private static final HttpServer _instance = new HttpServer();
     public HttpServer(){}
 
+    /*
+    *   Método que inicializa el servidor
+    * */
     public void start() throws IOException {
         ServerSocket serverSocket = null;
         try {
@@ -33,6 +41,12 @@ public class HttpServer {
         }
         serverSocket.close();
     }
+
+    /**
+     * Metodo  procesar las peticiones.
+     * @param clientSocket conexion Socket con cliente
+     * @throws IOException Error de lectura del cliente socket
+     */
     public void serveConnection (Socket clientSocket) throws IOException {
         OutputStream out= clientSocket.getOutputStream();
         BufferedReader in = new BufferedReader( new InputStreamReader(clientSocket.getInputStream()));
@@ -57,11 +71,13 @@ public class HttpServer {
         in.close();
     }
 
+    /**
+     * Genera la respuesta de la peticion del cliente
+     * @param ClientSocket OutputStream del socket del cliente
+     * @param response información procesada de la petición del cliente
+     * @throws IOException Error de escritura del recurso
+     */
     public  void getResource(HashMap<String,String> response, OutputStream ClientSocket) throws IOException {
-        // si es de tipo imagen llamar imagen
-        // getPng( OutputStream outClientSocket)
-        //si es de tipo js llamar lector archivos tanto js como html
-        // computDefaultResponse()
         String outputLine = "";
         if (response.get("rq")!= null) {
             PrintWriter printWriter = new PrintWriter( ClientSocket, true );
@@ -76,9 +92,14 @@ public class HttpServer {
             }
         }
         ClientSocket.close();
-        //return  computDefaultResponse();
     }
 
+    /**
+     * Metodo que obtiene un recurso almacenado.
+     * @param path nombre ruta del recurso
+     * @return arreglo de bytes del recurso para el outputStream
+     * @throws IOException error de lectura del archivo
+     */
     private byte[] findResource(String path) throws IOException {
         String dir = "src/main/resources/html_public" +  path;
         File resource= new File(dir);
@@ -93,47 +114,20 @@ public class HttpServer {
         return content;
     }
 
+    /**
+     * Genera encabezado segun el tipo de recurso solicitado
+     * @param path ruta del recurso
+     * @return Encabezado string http
+     */
     private String generateHeader(String path) {
         String header = "";
-        String[] lista = path.split("\\.");
-        String type = lista[lista.length-1];
+        String[] list = path.split("\\.");
+        String type = list[list.length-1];
         if( type.equals( "jpg" ) || type.equals( "png" ) ){
             header += "HTTP/1.1 200 OK\r\n Content-Type: image/" + type +"\r\n";
         }else if (type.equals( "html" ) || type.equals( "js" ) || type.equals( "css" )){
             header += "HTTP/1.1 200 OK\r\n Content-Type: text/" + type +"\r\n" + "\r\n";
         }
         return header;
-    }
-
-    public String  computDefaultResponse() throws IOException{
-        File archivo = new File("src/main/resources/html_public/index.html");
-        BufferedReader in = new BufferedReader( new FileReader( archivo ));
-        String out = "HTTP/1.1 200 OK\r\n"+ "Content-Type: text/html \r\n"+ "\r\n";
-        String inputLine;
-        while ((inputLine = in.readLine()) != null) {
-            out+=inputLine+"\n";
-            if (!in.ready()) {break; }
-        }
-        return out;
-    }
-    public void getPng( OutputStream outClientSocket){
-        String route = "src/main/resources/hello-world.png";
-        File file = new File(route);
-        if (file.exists()) {
-            try {
-                BufferedImage image = ImageIO.read(file);
-                ByteArrayOutputStream ArrBytes = new ByteArrayOutputStream();
-                DataOutputStream writeimg = new DataOutputStream(outClientSocket);
-                ImageIO.write(image, "PNG", ArrBytes);
-                writeimg.writeBytes("HTTP/1.1 200 OK \r\n"
-                                    + "Content-Type: image/png \r\n"
-                                    + "\r\n");
-                writeimg.write(ArrBytes.toByteArray());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }else {
-            System.out.println("ha ocurrido error al leer imagen"+file.getName());
-        }
     }
 }

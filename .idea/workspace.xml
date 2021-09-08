@@ -23,18 +23,10 @@
       <change afterPath="$PROJECT_DIR$/../ARSW-Laboratorio-4/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ARSW-Laboratorio-4/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ARSW-Laboratorio-4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/css.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/html.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/imagen.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/javascript.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/principal.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/html_public/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arep_Laboratorio.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HttpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/html_public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/html_public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/html_public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/html_public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/HttpServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/HttpServer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,12 +65,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/html_public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Usuario\Documents\2021-2\ARSW\Laboratorios\SquareClient\src\main\resources\html_public" />
       <recent name="C:\Users\Usuario\Documents\2021-2\ARSW\Laboratorios\SquareClient" />
+      <recent name="C:\Users\Usuario\Documents\2021-2\ARSW\Laboratorios\SquareClient\src\main\resources\html_public" />
       <recent name="C:\Users\Usuario\Documents\2021-2\ARSW\Laboratorios\SquareClient\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

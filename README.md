@@ -73,6 +73,9 @@ A continuación se presentan las distintas respuestas generadas por el servidor
 
 ![Imagen](img/imagen.PNG)
 
+##Articulo prototipo y evaluación
+[Arep_laboratorio.pdf](Arep_Laboratorio.pdf)
+
 ## Autor
 [Juan Camilo Posso Guevara](https://github.com/JCPosso)
 ## Derechos de Autor
